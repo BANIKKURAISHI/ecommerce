@@ -17,7 +17,7 @@ const removeWhy = () => {
   document.getElementById("trending").classList.add("hidden");
   document.getElementById("categoryButtonHidden").classList.remove("hidden");
 };
-//!!!!!! show detai
+//!!!!!! show details
 const showDetails = async (id) => {
   const data = await fetch(`https://fakestoreapi.com/products/${id}`);
   const show = await data.json();
@@ -29,6 +29,14 @@ const showDetailsButton = (products) => {
   modalDetails.innerHTML = `<div>
     <h1 class="font-semibold text-2xl  mb-4">${products.title}</h1>
     <h1 class="text-xl font-sm p-1">${products.description}</h1>
+    <div class="flex flex-row justify-between mt-3 space-y-2">
+     <P class="text-lg font-bold "><i class="fa-solid fa-dollar-sign"></i> <span class="">${products.price}</span> </P>
+    <h1 class=" "><i class="fa-solid fa-star text-yellow-400"></i>${products.rating.rate}(${products.rating.count})</h1>
+    </div>
+    <div class="flex flex-row justify-between mt-2 space-y-2">
+    <button class="btn bg-blue-400 p-3 rounded-lg mt-2">Buy Now</button>
+    <button class="btn bg-blue-400 p-3 rounded-lg mt-2">Add to Cart</button>
+      </div>
     </div>`;
   console.log(modalDetails);
   document.getElementById("myModal").showModal();
