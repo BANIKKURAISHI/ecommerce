@@ -7,8 +7,7 @@ const allProdocutsLoad = async () => {
   const res = await allProducts.json();
   allProductsShow(res);
 
-  // topProductsShow(res)
-  // console.log(res)
+ 
 };
 
 const removeWhy = () => {
