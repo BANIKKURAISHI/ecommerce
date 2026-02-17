@@ -51,11 +51,8 @@ const showDetailsButton = (products) => {
 
 
 const cartCountButton = (productCount) => {
-
-
   count++;
   document.getElementById("cartCount").innerText = count;
-
 };
 
 const allProductsShow = (allProducts) => {
