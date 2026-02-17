@@ -15,22 +15,8 @@ map holo kono kicu thaka  amr result proyojon ami result ta dakhabo tokhhon amra
 `2-Function--` function akta nirdisto simana thaka ata global scope thaka jakaon kicu access korta pare kintu ata vitorer kicu baire thaka access kora jai na. 
 `3-Block--` block shudu block ar moddhai kaj kore ata baire kaj kore na .
 
-
-
-
-
-
-
-
-
-
-
-📌 Rules
-✅ At least 5 meaningful commits
-❌ No dummy text where real data can be shown.
-
 ## 🔗 Submission
-- **Live Link :** YOUR_DEPLOYED_URL_HERE
-- **GitHub Repository:** YOUR_REPO_URL_HERE
+- **Live Link :** (https://lovely-duckanoo-ed17ac.netlify.app/)
+- **GitHub Repository:** (https://github.com/BANIKKURAISHI/ecommerce.git)
 
 
