@@ -1,5 +1,6 @@
 const url = "https://fakestoreapi.com/products";
 
+
 let count = 0
 
 const allProdocutsLoad = async () => {
@@ -9,6 +10,10 @@ const allProdocutsLoad = async () => {
 
  
 };
+
+// !! only active button color full 
+
+
 
 const removeWhy = () => {
   document.getElementById("why").classList.add("hidden");
@@ -21,7 +26,9 @@ const showDetails = async (id) => {
   const data = await fetch(`https://fakestoreapi.com/products/${id}`);
   const show = await data.json();
   showDetailsButton(show);
+
 };
+
 const showDetailsButton = (products) => {
   console.log(products);
   const modalDetails = document.getElementById("modalDetails");
@@ -41,7 +48,11 @@ const showDetailsButton = (products) => {
   document.getElementById("myModal").showModal();
 };
 
+
+
 const cartCountButton = (productCount) => {
+
+
   count++;
   document.getElementById("cartCount").innerText = count;
 
@@ -82,3 +93,11 @@ const allProductsShow = (allProducts) => {
     showProducts.appendChild(newDiv);
   });
 };
+const removeActive = (btn) => {
+  const allButton = document.querySelectorAll(".btn");
+ 
+  allButton.forEach(button => {
+    button.classList.remove("active");
+  });
+ btn.classList.add("active");
+} 

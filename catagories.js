@@ -10,8 +10,10 @@ const categorylist = async () => {
     const createButton = document.createElement("button");
     createButton.textContent = category;
     createButton.className = `btn mr-10 `
-    createButton.addEventListener("click", () => {
+    createButton.addEventListener("click", (e) => {
       categotyDetails(category);
+      removeActive(e.currentTarget)
+     
     });
     // createButton.innerHTML=`<button onclick="categotyDetails("${category}")"  class="btn mr-10" >${category}</button>`
     categotyButtonList.append(createButton);
